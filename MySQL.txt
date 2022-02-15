@@ -57,7 +57,7 @@ alter table info_Office add column NID varchar (60) not null after age;     //ad
 RENAME TABLE info_kazi   TO info_ kazishayem;                  //Table Name
 
        ALTER TABLE info_kazi   RENAME COLUMN name TO Client_name;  //Column Name
-       
+
                                Constraints
 
 The following are the most common constraints used in MySQL:
@@ -74,6 +74,17 @@ The following are the most common constraints used in MySQL:
 
                                    JOIN
                                 
+INNER JOIN:
+SELECT info_kazishayem.id, info_office.name  
+FROM info_kazishayem   
+INNER JOIN info_office  
+ON info_kazishayem.id = info_office.id;
+
+LEFT JOIN:
+SELECT info_kazishayem.id, info_kazishayem. Client_name ,info_office.Salary 
+FROM info_kazishayem  
+LEFT JOIN info_office ON info_kazishayem.id = info_office.id; 
+RIGHT JOIN:
 
 
 
