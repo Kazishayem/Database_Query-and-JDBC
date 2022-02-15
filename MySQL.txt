@@ -1,0 +1,70 @@
+All Query
+
+All Query
+                                      DATABASE:
+When trying to create a new Database then this query:
+•	create database
+CREATE DATABASE employee;                                 
+When trying to show the list of Database:
+•	show all database
+ show databases; 
+                                       TABLE:
+show tables;                                           //all tables show
+create table info_farhad(
+ID int primary key, name varchar (50), age int (2), phoneNo varchar (50), address varchar (50));  
+create table PersonTwo(PersonID int primary key auto_increment, PersonName varchar(100) not null, Address varchar(100), Passport varchar(100) unique, Salary decimal(10,2) default 4000);
+primary key----- 
+auto_increment-----
+unique--------
+                                              
+•	Show the table details:
+select * from info_farhad; 
+                                     TRUNCATE
+
+•	Delete All Data Inside The Table, But Not The Table                                 
+SELECT Concat('TRUNCATE TABLE ', TABLE_NAME)  
+FROM INFORMATION_SCHEMA.TABLES  
+WHERE table_schema = 'info_client';  
+
+TRUNCATE TABLE info_farhad;   
+TRUNCATE TABLE info_kazishayem;
+TRUNCATE TABLE info_office;  
+Describe
+
+•	Describe table —datatype; field name; primary or not null or not null 
+
+DESCRIBE info_farhad;
+Drop table:
+      DROP TABLE info_farhad;
+
+                                 INSERT
+insert into info_farhad (ID, name, age, phoneNo, address)
+values(1,"kazi",20,"01881166493","Barisal");                        
+                                  UPDATE
+UPDATE assign
+SET FirstName='KAZI', LastName='ABRAR', Address='Didar'
+where ID =15;    
+
+                                 DELETE
+delete from assign WHERE id=13;   
+
+
+                                 ALTER:
+It’s Works for Add, Drop, And Modify Column
+alter table info_Office drop NID; //Drop
+alter table info_Office add column NID varchar (60) not null after age;     //add                                           
+                                  RENAME:
+RENAME TABLE info_kazi   TO info_ kazishayem;                  //Table Name
+
+       ALTER TABLE info_kazi   RENAME COLUMN name TO Client_name;  //Column Name
+
+
+                                   JOIN
+                                
+
+
+
+
+
+
+

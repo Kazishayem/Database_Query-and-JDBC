@@ -1,0 +1,1 @@
+create---update----=delete----insert----select-table row show----alter column add----alter column drop

@@ -1,0 +1,23 @@
+create table assign(
+ID int,FirstName varchar(50),LastName varchar(50),Address  varchar(50));
+
+select * from assign;
+select * from usertest;
+create table farhad(id int,FirstName varchar(50),LastName varchar(50));
+
+select * from usertest;
+
+insert into assign(ID,FirstName,LastName,Address)
+values(14,"Abrar","Mahamood","Dhaka");
+
+UPDATE assign
+SET FirstName='KAZI', LastName='ABRAR', Address='Didar'
+where ID =15;
+UPDATE usertest
+set name='rahik'
+where id =1;
+
+delete from assign WHERE id=13;
+
+select * from assign
+WHERE id=15;
