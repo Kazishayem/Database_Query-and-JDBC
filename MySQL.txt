@@ -71,6 +71,18 @@ The following are the most common constraints used in MySQL:
 •	ENUM
 •	FOREIGN KEY
 
+                                      CLAUSES
+Where:
+SELECT *  FROM info_office  
+WHERE age = 24;  
+•	ORDER BY:
+SELECT *  
+FROM info_office  
+WHERE age = 24  
+ORDER BY name;
+
+
+
 
                                    JOIN
                                 
