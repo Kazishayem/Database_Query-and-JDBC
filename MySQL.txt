@@ -57,6 +57,19 @@ alter table info_Office add column NID varchar (60) not null after age;     //ad
 RENAME TABLE info_kazi   TO info_ kazishayem;                  //Table Name
 
        ALTER TABLE info_kazi   RENAME COLUMN name TO Client_name;  //Column Name
+       
+                               Constraints
+
+The following are the most common constraints used in MySQL:
+•	NOT NULL
+•	CHECK
+•	DEFAULT
+•	PRIMARY KEY
+•	AUTO_INCREMENT
+•	UNIQUE
+•	INDEX
+•	ENUM
+•	FOREIGN KEY
 
 
                                    JOIN
