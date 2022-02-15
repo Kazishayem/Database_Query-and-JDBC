@@ -97,6 +97,9 @@ SELECT info_kazishayem.id, info_kazishayem. Client_name ,info_office.Salary
 FROM info_kazishayem  
 LEFT JOIN info_office ON info_kazishayem.id = info_office.id; 
 RIGHT JOIN:
+SELECT info_kazishayem.id, info_kazishayem.Client_name  ,info_office.Salary 
+FROM info_kazishayem  
+right JOIN info_office ON info_kazishayem.id = info_office.id;
 
 
 
